@@ -1,0 +1,23 @@
+{
+  "name": "js-problems",
+  "version": "0.0.0",
+  "description": "random js problems",
+  "main": "index.js",
+  "scripts": {
+    "cache": "ts-node cache/index.ts",
+    "queue": "ts-node --esm queue/index.mts",
+    "queue:docker": "ts-node --esm index.mts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.16.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "got": "^12.6.0"
+  }
+}

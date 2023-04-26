@@ -1,0 +1,46 @@
+version: "3"
+
+services:
+  mainlad:
+    image: node-balenciaga-service
+    mem_limit: 100m
+    ports:
+      - "42069:42069"
+    networks:
+      my-network:
+        aliases:
+          - mainlad
+
+  backup1:
+    image: node-balenciaga-service
+    mem_limit: 200m
+    ports:
+      - "42070:42070"
+    networks:
+      my-network:
+        aliases:
+          - backup1
+
+  backup2:
+    image: node-balenciaga-service
+    mem_limit: 200m
+    ports:
+      - "42071:42071"
+    networks:
+      my-network:
+        aliases:
+          - backup2
+
+  backup3:
+    image: node-balenciaga-service
+    mem_limit: 200m
+    ports:
+      - "42072:42072"
+    networks:
+      my-network:
+        aliases:
+          - backup3
+
+networks:
+  my-network:
+    driver: bridge
